@@ -39,6 +39,7 @@
 			isa = PBXGroup;
 			children = (
 				FC67A3F721EB999A00F990F2 /* InstaGriD-OC-P4 */,
+				FC67A40D21EB9B7400F990F2 /* Supporting Files */,
 				FC67A3F621EB999A00F990F2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,14 +55,45 @@
 		FC67A3F721EB999A00F990F2 /* InstaGriD-OC-P4 */ = {
 			isa = PBXGroup;
 			children = (
-				FC67A3F821EB999A00F990F2 /* AppDelegate.swift */,
-				FC67A3FA21EB999A00F990F2 /* ViewController.swift */,
-				FC67A3FC21EB999A00F990F2 /* Main.storyboard */,
-				FC67A3FF21EB999B00F990F2 /* Assets.xcassets */,
-				FC67A40121EB999B00F990F2 /* LaunchScreen.storyboard */,
+				FC67A40C21EB9B6D00F990F2 /* Model */,
+				FC67A40B21EB9B5A00F990F2 /* View */,
+				FC67A40A21EB9B4700F990F2 /* Cotnroller */,
 				FC67A40421EB999B00F990F2 /* Info.plist */,
 			);
 			path = "InstaGriD-OC-P4";
+			sourceTree = "<group>";
+		};
+		FC67A40A21EB9B4700F990F2 /* Cotnroller */ = {
+			isa = PBXGroup;
+			children = (
+				FC67A3FA21EB999A00F990F2 /* ViewController.swift */,
+			);
+			path = Cotnroller;
+			sourceTree = "<group>";
+		};
+		FC67A40B21EB9B5A00F990F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC67A40121EB999B00F990F2 /* LaunchScreen.storyboard */,
+				FC67A3FC21EB999A00F990F2 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC67A40C21EB9B6D00F990F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC67A40D21EB9B7400F990F2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC67A3F821EB999A00F990F2 /* AppDelegate.swift */,
+				FC67A3FF21EB999B00F990F2 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
