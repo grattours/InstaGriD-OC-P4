@@ -116,8 +116,8 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mCt-CH-CMS" userLabel="Stack View swap">
                                 <rect key="frame" x="123.33333333333333" y="126.33333333333333" width="167.33333333333337" height="55.333333333333329"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYy-az-IN6">
-                                        <rect key="frame" x="76.666666666666671" y="0.0" width="14" height="25.333333333333332"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⌃" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYy-az-IN6">
+                                        <rect key="frame" x="74.333333333333329" y="0.0" width="18.666666666666671" height="25.333333333333332"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                         <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -254,7 +254,7 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="ui_Chevron" destination="mYy-az-IN6" id="zti-PC-Uxc"/>
+                        <outlet property="ui_Chevron" destination="mYy-az-IN6" id="BCN-vT-z0H"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

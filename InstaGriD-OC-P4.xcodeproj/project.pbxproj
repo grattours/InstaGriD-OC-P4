@@ -43,7 +43,6 @@
 			isa = PBXGroup;
 			children = (
 				FC67A3F721EB999A00F990F2 /* InstaGriD-OC-P4 */,
-				FC67A40D21EB9B7400F990F2 /* Supporting Files */,
 				FC67A3F621EB999A00F990F2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,6 +62,7 @@
 				FC67A40B21EB9B5A00F990F2 /* View */,
 				FC67A40A21EB9B4700F990F2 /* Cotnroller */,
 				FC67A40421EB999B00F990F2 /* Info.plist */,
+				FC67A40D21EB9B7400F990F2 /* Supporting Files */,
 			);
 			path = "InstaGriD-OC-P4";
 			sourceTree = "<group>";
