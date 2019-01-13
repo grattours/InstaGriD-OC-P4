@@ -43,7 +43,37 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1hN-ym-L72" userLabel="Grid View">
                                 <rect key="frame" x="40" y="191.66666666666663" width="334" height="334"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="u2k-QM-EOB" userLabel="Layers View 2">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="WZy-J6-A8k" userLabel="Layers View 1">
+                                        <rect key="frame" x="15" y="15" width="304" height="304"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cross" translatesAutoresizingMaskIntoConstraints="NO" id="1cx-z4-Qyb">
+                                                <rect key="frame" x="0.0" y="0.0" width="304" height="144.66666666666666"/>
+                                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="K81-CR-aTm">
+                                                <rect key="frame" x="0.0" y="159.66666666666663" width="304" height="144.33333333333337"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cross" translatesAutoresizingMaskIntoConstraints="NO" id="LP5-ha-s4R">
+                                                        <rect key="frame" x="0.0" y="0.0" width="144.66666666666666" height="144.33333333333334"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cross" translatesAutoresizingMaskIntoConstraints="NO" id="Heh-Z0-AIG">
+                                                        <rect key="frame" x="159.66666666666663" y="0.0" width="144.33333333333337" height="144.33333333333334"/>
+                                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="Heh-Z0-AIG" firstAttribute="height" secondItem="K81-CR-aTm" secondAttribute="height" id="TAI-Tc-Uh2"/>
+                                                    <constraint firstItem="LP5-ha-s4R" firstAttribute="height" secondItem="K81-CR-aTm" secondAttribute="height" id="Yp7-Sl-KDj"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="1cx-z4-Qyb" firstAttribute="height" secondItem="K81-CR-aTm" secondAttribute="height" id="Zd8-c8-M6L"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="KwT-If-hOQ"/>
+                                    </stackView>
+                                    <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="u2k-QM-EOB" userLabel="Layers View 2">
                                         <rect key="frame" x="15" y="15" width="304" height="304"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Xix-fU-9c5">
@@ -77,9 +107,13 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="1hN-ym-L72" secondAttribute="height" id="2ne-nM-tVg"/>
                                     <constraint firstAttribute="trailing" secondItem="u2k-QM-EOB" secondAttribute="trailing" constant="15" id="5om-F6-Rvv"/>
+                                    <constraint firstAttribute="bottom" secondItem="WZy-J6-A8k" secondAttribute="bottom" constant="15" id="6hE-H3-GNO"/>
+                                    <constraint firstItem="WZy-J6-A8k" firstAttribute="leading" secondItem="1hN-ym-L72" secondAttribute="leading" constant="15" id="IKl-1t-oE3"/>
                                     <constraint firstItem="u2k-QM-EOB" firstAttribute="top" secondItem="1hN-ym-L72" secondAttribute="top" constant="15" id="MfX-Yd-ySx"/>
                                     <constraint firstItem="u2k-QM-EOB" firstAttribute="leading" secondItem="1hN-ym-L72" secondAttribute="leading" constant="15" id="Yd9-Ki-xoq"/>
                                     <constraint firstAttribute="bottom" secondItem="u2k-QM-EOB" secondAttribute="bottom" constant="15" id="exj-yd-icW"/>
+                                    <constraint firstAttribute="trailing" secondItem="WZy-J6-A8k" secondAttribute="trailing" constant="15" id="s6X-vf-fae"/>
+                                    <constraint firstItem="WZy-J6-A8k" firstAttribute="top" secondItem="1hN-ym-L72" secondAttribute="top" constant="15" id="y9N-U9-eAI"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="u2r-G5-mNa" userLabel="Stack Button">
@@ -259,7 +293,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="51.724137931034484" y="24.800000000000001"/>
+            <point key="canvasLocation" x="50.724637681159422" y="24.456521739130437"/>
         </scene>
     </scenes>
     <resources>
