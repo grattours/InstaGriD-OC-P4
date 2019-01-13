@@ -41,5 +41,14 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>ATSApplicationFontsPath</key>
+	<string></string>
+	<key></key>
+	<string></string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>ThirstySoftRegular.otf</string>
+		<string>Delm-Medium.otf</string>
+	</array>
 </dict>
 </plist>
