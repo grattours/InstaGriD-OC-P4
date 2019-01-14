@@ -49,7 +49,8 @@ extension ViewController {
             photo = original
         }
         // layer2ImageView1.image = photo
-        imageToChange = photo
+        alternateImage = photo
+        
         imagePicker?.dismiss(animated: true, completion: nil)
     }
     

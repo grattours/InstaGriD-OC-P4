@@ -15,18 +15,24 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet weak var ui_Button1: UIButton!
     @IBOutlet weak var ui_Button2: UIButton!
     @IBOutlet weak var ui_Button3: UIButton!
-    
+    // calques de photos
     @IBOutlet weak var ui_LayersView1: UIStackView!
     @IBOutlet weak var ui_LayersView2: UIStackView!
     @IBOutlet weak var ui_LayersView3: UIStackView!
     
-    // transformation en tableau pour reconnaitre les changements
-    @IBOutlet  var layer2ImageView1: [UIImageView]!
-    @IBOutlet  var layer2ImageView2: [UIImageView]!
-    @IBOutlet  var layer2ImageView3: [UIImageView]!
+    // tableaux de photos par calques
+    @IBOutlet var tabLayersView1: [UIImageView]!
+    @IBOutlet var tabLayersView2: [UIImageView]!
+    @IBOutlet var tabLayersView3: [UIImageView]!
+    // photos du calque 2
+    @IBOutlet  var layer2ImageView1: UIImageView!
+    @IBOutlet  var layer2ImageView2: UIImageView!
+    @IBOutlet  var layer2ImageView3: UIImageView!
+    
+    // redéfinition des calques en tableau d'imageView
     
     var imagePicker:  UIImagePickerController?
-    var imageToChange: UIImage?
+    var alternateImage: UIImage?
     
     @IBAction func buttonSelected(_ sender: UIButton) {
         ui_LayersView1.isHidden = true
@@ -55,7 +61,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // faire une fonction setup
@@ -66,7 +71,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         ui_Button2.imageView?.isHidden = false
         ui_Button3.imageView?.isHidden = true
         // interagir avec les images des calques
-//        interactWihPhotosLayer(layer2ImageView1[0])
+        interactWihPhotosLayer(layer2ImageView1)
 //        interactWihPhotosLayer(layer2ImageView2)
 //        interactWihPhotosLayer(layer2ImageView3)
 

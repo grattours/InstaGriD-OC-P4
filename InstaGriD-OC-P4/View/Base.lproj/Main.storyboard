@@ -343,8 +343,7 @@
                     </view>
                     <connections>
                         <outlet property="layer2ImageView1" destination="cLJ-wq-0NF" id="IkC-Gy-NDU"/>
-                        <outlet property="layer2ImageView2" destination="K8O-Ji-8hR" id="rtg-D8-HH9"/>
-                        <outlet property="layer2ImageView3" destination="HiK-gI-eko" id="uud-Jp-DIM"/>
+                        <outlet property="layer2ImageView2" destination="HiK-gI-eko" id="6AA-d5-oGe"/>
                         <outlet property="ui_Button1" destination="rYJ-37-QgJ" id="CvD-CZ-xDn"/>
                         <outlet property="ui_Button2" destination="Pvm-PA-kfV" id="CjV-Uw-gzV"/>
                         <outlet property="ui_Button3" destination="4Js-XV-UCt" id="1YB-Wd-3Qc"/>
@@ -352,6 +351,16 @@
                         <outlet property="ui_LayersView1" destination="WZy-J6-A8k" id="lul-GH-to8"/>
                         <outlet property="ui_LayersView2" destination="u2k-QM-EOB" id="u7P-kc-zDg"/>
                         <outlet property="ui_LayersView3" destination="gu8-Io-BZ2" id="Adj-wY-0ad"/>
+                        <outletCollection property="tabLayersView1" destination="1cx-z4-Qyb" collectionClass="NSMutableArray" id="YfO-HV-35K"/>
+                        <outletCollection property="tabLayersView1" destination="LP5-ha-s4R" collectionClass="NSMutableArray" id="AEv-Jw-Mla"/>
+                        <outletCollection property="tabLayersView1" destination="Heh-Z0-AIG" collectionClass="NSMutableArray" id="qfN-8I-ytj"/>
+                        <outletCollection property="tabLayersView2" destination="cLJ-wq-0NF" collectionClass="NSMutableArray" id="JJn-4Q-zUA"/>
+                        <outletCollection property="tabLayersView2" destination="K8O-Ji-8hR" collectionClass="NSMutableArray" id="E41-Vx-P5h"/>
+                        <outletCollection property="tabLayersView2" destination="HiK-gI-eko" collectionClass="NSMutableArray" id="RXH-sX-7jE"/>
+                        <outletCollection property="tabLayersView3" destination="JeN-5l-gol" collectionClass="NSMutableArray" id="U18-gP-Gkp"/>
+                        <outletCollection property="tabLayersView3" destination="Akh-RH-Qoo" collectionClass="NSMutableArray" id="9CF-in-0Ke"/>
+                        <outletCollection property="tabLayersView3" destination="8Yh-fj-UiT" collectionClass="NSMutableArray" id="9ws-DV-RsJ"/>
+                        <outletCollection property="tabLayersView3" destination="awB-V9-b50" collectionClass="NSMutableArray" id="eHV-82-xl5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
