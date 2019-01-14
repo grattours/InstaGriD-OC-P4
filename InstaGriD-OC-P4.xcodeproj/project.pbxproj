@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC56050621ECF6AB00BEBEC5 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC56050521ECF6AB00BEBEC5 /* PhotosViewController.swift */; };
 		FC5BD39821EBA27A00F5BECD /* Delm-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC5BD39721EBA27A00F5BECD /* Delm-Medium.otf */; };
 		FC5BD39A21EBA28A00F5BECD /* ThirstySoftRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC5BD39921EBA28A00F5BECD /* ThirstySoftRegular.otf */; };
 		FC67A3F921EB999A00F990F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC67A3F821EB999A00F990F2 /* AppDelegate.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC56050521ECF6AB00BEBEC5 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		FC5BD39721EBA27A00F5BECD /* Delm-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delm-Medium.otf"; sourceTree = "<group>"; };
 		FC5BD39921EBA28A00F5BECD /* ThirstySoftRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThirstySoftRegular.otf; sourceTree = "<group>"; };
 		FC67A3F521EB999A00F990F2 /* InstaGriD-OC-P4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "InstaGriD-OC-P4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				FC67A3FA21EB999A00F990F2 /* ViewController.swift */,
+				FC56050521ECF6AB00BEBEC5 /* PhotosViewController.swift */,
 			);
 			path = Cotnroller;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC56050621ECF6AB00BEBEC5 /* PhotosViewController.swift in Sources */,
 				FC67A3FB21EB999A00F990F2 /* ViewController.swift in Sources */,
 				FC67A3F921EB999A00F990F2 /* AppDelegate.swift in Sources */,
 			);
