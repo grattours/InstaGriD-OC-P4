@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var ui_Chevron: UILabel!
     
@@ -19,6 +19,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var ui_LayersView1: UIStackView!
     @IBOutlet weak var ui_LayersView2: UIStackView!
     @IBOutlet weak var ui_LayersView3: UIStackView!
+    
+    
+    @IBOutlet weak var layer2ImageView1: UIImageView!
+    
+    var imagePicker:  UIImagePickerController?
     
     @IBAction func buttonSelected(_ sender: UIButton) {
         ui_LayersView1.isHidden = true
@@ -59,6 +64,13 @@ class ViewController: UIViewController {
         ui_Button1.imageView?.isHidden = true
         ui_Button2.imageView?.isHidden = false
         ui_Button3.imageView?.isHidden = true
+        
+        layer2ImageView1.isUserInteractionEnabled = true
+        let tap = UITapGestureRecognizer(target: self, action: #selector(searchPhoto))
+        layer2ImageView1.addGestureRecognizer(tap)
+        imagePicker = UIImagePickerController()
+        imagePicker?.delegate = self
+        imagePicker?.allowsEditing = true
     }
     
     override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
@@ -70,6 +82,45 @@ class ViewController: UIViewController {
             }
         })
     }
+    
+    // recherche photo avec le tap... selector  dans le viewDidload
+    @objc func searchPhoto() {
+        guard imagePicker != nil else { return }
+        let alert = UIAlertController(title: "Choisir une photo", message: "dans la photothéque", preferredStyle: .actionSheet)
+        let library = UIAlertAction(title: "photothéque", style: .default) { (act) in self.imagePicker?.sourceType = .photoLibrary
+            self.present(self.imagePicker!, animated: true, completion: nil)
+        }
+        let exit = UIAlertAction(title: "Annuler", style: .cancel, handler: nil)
+        
+        alert.addAction(library)
+        alert.addAction(exit)
+        self.present(alert, animated: true, completion: nil)
+        
+    }
+
+    // après le choix de l'image - remplacement dans l'UIImageView
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        print("après choix")
+        let info = convertFromUIImagePickerControllerInfoKeyDictionary(info)
+        var photo: UIImage?
+        if let edited = info[convertFromUIImagePickerControllerInfoKey(UIImagePickerController.InfoKey.editedImage)] as? UIImage {
+            photo = edited
+            
+        } else if let original = info[convertFromUIImagePickerControllerInfoKey(UIImagePickerController.InfoKey.originalImage)] as? UIImage {
+            photo = original
+        }
+        layer2ImageView1.image = photo
+        imagePicker?.dismiss(animated: true, completion: nil)
+    }
 
 }
 
+// Helper
+
+fileprivate func convertFromUIImagePickerControllerInfoKeyDictionary(_ input: [UIImagePickerController.InfoKey: Any]) -> [String: Any] {
+    return Dictionary(uniqueKeysWithValues: input.map {key, value in (key.rawValue, value)})
+}
+
+fileprivate func convertFromUIImagePickerControllerInfoKey(_ input: UIImagePickerController.InfoKey) -> String {
+    return input.rawValue
+}
