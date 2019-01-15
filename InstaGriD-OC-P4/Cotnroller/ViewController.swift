@@ -33,6 +33,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     var imagePicker:  UIImagePickerController?
     var alternateImage: UIImage?
+    var tagOfTap: Int = 0
     
     @IBAction func buttonSelected(_ sender: UIButton) {
         ui_LayersView1.isHidden = true
@@ -71,7 +72,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         ui_Button2.imageView?.isHidden = false
         ui_Button3.imageView?.isHidden = true
         // interagir avec les images des calques
-        interactWihPhotosLayer(layer2ImageView1)
+//        interactWihPhotosLayer(layer2ImageView1)
+         interactWithAllPhotosOfLayer(tabLayersView2)
 //        interactWihPhotosLayer(layer2ImageView2)
 //        interactWihPhotosLayer(layer2ImageView3)
 
