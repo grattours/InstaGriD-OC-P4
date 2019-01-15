@@ -51,7 +51,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             print("bouton centre 11 2")
             ui_LayersView2.isHidden = false
             ui_Button2.imageView?.isHidden = false
-           ui_Button2.setImage(UIImage(named: "Selected"), for: .normal)
+            ui_Button2.setImage(UIImage(named: "Selected"), for: .normal)
         case 3:
             print("bouton droit 11 22")
             ui_LayersView3.isHidden = false

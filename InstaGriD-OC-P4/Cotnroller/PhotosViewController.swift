@@ -14,7 +14,7 @@ extension ViewController {
     func interactWihPhotosLayer(_ ImageView :UIImageView) {
         print("interact")
         ImageView.isUserInteractionEnabled = true
-        let tap = UITapGestureRecognizer(target: self, action: #selector(searchPhoto))
+        let tap = UITapGestureRecognizer(target: self, action: #selector(searchPhotoToReplace(tap: )))
         ImageView.addGestureRecognizer(tap)
         imagePicker = UIImagePickerController()
         imagePicker?.delegate = self
@@ -23,7 +23,10 @@ extension ViewController {
     
    
     // recherche photo avec le tap... selector  dans le viewDidload
-    @objc func searchPhoto() {
+    @objc func searchPhotoToReplace(tap: UITapGestureRecognizer) {
+        // print("toucher \(gesture.view?.tag ?? 00)")
+        let tag = tap.view?.tag
+        print("récup du tag de l'image: \(String(describing: tag))")
         guard imagePicker != nil else { return }
         let alert = UIAlertController(title: "Choisir une photo", message: "dans la photothéque", preferredStyle: .actionSheet)
         let library = UIAlertAction(title: "photothéque", style: .default) { (act) in self.imagePicker?.sourceType = .photoLibrary
@@ -50,7 +53,7 @@ extension ViewController {
         }
         // layer2ImageView1.image = photo
         alternateImage = photo
-        
+        // let tag = gesture.view?.tag
         imagePicker?.dismiss(animated: true, completion: nil)
     }
     
