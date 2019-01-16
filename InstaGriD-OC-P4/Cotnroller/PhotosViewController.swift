@@ -73,6 +73,15 @@ extension ViewController {
 //    print("ImageOfTheTag")
         //print(tag)
         switch tag {
+        case 11:
+            tabLayersView1[0].image = alternateImage
+            alternateImage = nil
+        case 12:
+            tabLayersView1[1].image = alternateImage
+            alternateImage = nil
+        case 13:
+            tabLayersView1[2].image = alternateImage
+            alternateImage = nil
         case 21:
             tabLayersView2[0].image = alternateImage
             alternateImage = nil
@@ -81,6 +90,18 @@ extension ViewController {
             alternateImage = nil
         case 23:
             tabLayersView2[2].image = alternateImage
+            alternateImage = nil
+        case 31:
+            tabLayersView3[0].image = alternateImage
+            alternateImage = nil
+        case 32:
+            tabLayersView3[1].image = alternateImage
+            alternateImage = nil
+        case 33:
+            tabLayersView3[2].image = alternateImage
+            alternateImage = nil
+        case 34:
+            tabLayersView3[3].image = alternateImage
             alternateImage = nil
         default:
             print("autre")

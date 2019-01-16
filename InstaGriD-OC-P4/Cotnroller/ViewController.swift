@@ -48,15 +48,18 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             print("bouton gauche 1 22")
             ui_LayersView1.isHidden = false
             ui_Button1.imageView?.isHidden = false
+            interactWithAllPhotosOfLayer(tabLayersView1)
         case 2:
             print("bouton centre 11 2")
             ui_LayersView2.isHidden = false
             ui_Button2.imageView?.isHidden = false
             ui_Button2.setImage(UIImage(named: "Selected"), for: .normal)
+            interactWithAllPhotosOfLayer(tabLayersView2)
         case 3:
             print("bouton droit 11 22")
             ui_LayersView3.isHidden = false
             ui_Button3.imageView?.isHidden = false
+            interactWithAllPhotosOfLayer(tabLayersView3)
         default:
             print("impossible")
         }

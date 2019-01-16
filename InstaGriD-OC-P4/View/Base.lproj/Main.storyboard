@@ -344,6 +344,7 @@
                     <connections>
                         <outlet property="layer2ImageView1" destination="cLJ-wq-0NF" id="IkC-Gy-NDU"/>
                         <outlet property="layer2ImageView2" destination="HiK-gI-eko" id="6AA-d5-oGe"/>
+                        <outlet property="layer2ImageView3" destination="awB-V9-b50" id="qcO-33-Trn"/>
                         <outlet property="ui_Button1" destination="rYJ-37-QgJ" id="CvD-CZ-xDn"/>
                         <outlet property="ui_Button2" destination="Pvm-PA-kfV" id="CjV-Uw-gzV"/>
                         <outlet property="ui_Button3" destination="4Js-XV-UCt" id="1YB-Wd-3Qc"/>
