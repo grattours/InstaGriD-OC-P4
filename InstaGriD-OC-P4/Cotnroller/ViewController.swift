@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var ui_Chevron: UILabel!
+    @IBOutlet weak var ui_LabeSwipToShare: UILabel!
     
     @IBOutlet weak var ui_Button1: UIButton!
     @IBOutlet weak var ui_Button2: UIButton!
@@ -86,8 +87,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         coordinator.animate(alongsideTransition: { context in
             if UIApplication.shared.statusBarOrientation.isLandscape {
                 self.ui_Chevron.text = "<"
+                self.ui_LabeSwipToShare.text = "Swipe left to share"
             } else {
                 self.ui_Chevron.text = "⌃"
+                self.ui_LabeSwipToShare.text = "Swipe up to share"
             }
         })
     }

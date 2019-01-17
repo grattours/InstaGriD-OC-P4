@@ -202,21 +202,22 @@
                                 <variation key="heightClass=compact" axis="vertical"/>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mCt-CH-CMS" userLabel="Stack View swap">
-                                <rect key="frame" x="123.33333333333333" y="126.33333333333333" width="167.33333333333337" height="55.333333333333329"/>
+                                <rect key="frame" x="127" y="128.66666666666666" width="160" height="53"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⌃" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYy-az-IN6">
-                                        <rect key="frame" x="74.333333333333329" y="0.0" width="18.666666666666671" height="25.333333333333332"/>
+                                        <rect key="frame" x="70.666666666666657" y="0.0" width="18.666666666666671" height="25.333333333333332"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                         <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Swipe up to share" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7yk-Qr-pUt">
-                                        <rect key="frame" x="0.6666666666666714" y="25.333333333333329" width="166.33333333333331" height="30"/>
-                                        <fontDescription key="fontDescription" name="Delm-Medium" family="Delm" pointSize="27"/>
+                                        <rect key="frame" x="3" y="25.333333333333343" width="154" height="27.666666666666671"/>
+                                        <fontDescription key="fontDescription" name="Delm-Medium" family="Delm" pointSize="25"/>
                                         <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="7yk-Qr-pUt" secondAttribute="trailing" constant="5" id="ClS-gP-6pP"/>
                                     <constraint firstItem="mYy-az-IN6" firstAttribute="centerY" secondItem="mCt-CH-CMS" secondAttribute="centerY" id="FgG-xI-h7f"/>
@@ -250,6 +251,9 @@
                                         <include reference="nrs-Hg-cMA"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="vms-pr-5Le" appends="YES" id="NOF-FV-b7d"/>
+                                </connections>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.74177366495132446" green="0.8382079005241394" blue="0.89020645618438721" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -349,6 +353,7 @@
                         <outlet property="ui_Button2" destination="Pvm-PA-kfV" id="CjV-Uw-gzV"/>
                         <outlet property="ui_Button3" destination="4Js-XV-UCt" id="1YB-Wd-3Qc"/>
                         <outlet property="ui_Chevron" destination="mYy-az-IN6" id="BCN-vT-z0H"/>
+                        <outlet property="ui_LabeSwipToShare" destination="7yk-Qr-pUt" id="3cl-M3-o7o"/>
                         <outlet property="ui_LayersView1" destination="WZy-J6-A8k" id="lul-GH-to8"/>
                         <outlet property="ui_LayersView2" destination="u2k-QM-EOB" id="u7P-kc-zDg"/>
                         <outlet property="ui_LayersView3" destination="gu8-Io-BZ2" id="Adj-wY-0ad"/>
@@ -365,6 +370,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="vms-pr-5Le"/>
             </objects>
             <point key="canvasLocation" x="50.724637681159422" y="24.456521739130437"/>
         </scene>

@@ -11,16 +11,16 @@ import UIKit
 extension ViewController {
     
     // interagir avec les photos du calque lancé depuis viewdiload
-    func interactWihPhotosLayer(_ ImageView :UIImageView) {
-        print("interact")
-        ImageView.isUserInteractionEnabled = true
-        let tap = UITapGestureRecognizer(target: self, action: #selector(searchPhotoToReplace(tap: )))
-        print("tap UITapGestureRecognizer dans interactWihPhotosLayer" )
-        ImageView.addGestureRecognizer(tap)
-        imagePicker = UIImagePickerController()
-        imagePicker?.delegate = self
-        imagePicker?.allowsEditing = true
-    }
+//    func interactWihPhotosLayer(_ ImageView :UIImageView) {
+//        print("interact")
+//        ImageView.isUserInteractionEnabled = true
+//        let tap = UITapGestureRecognizer(target: self, action: #selector(searchPhotoToReplace(tap: )))
+//        print("tap UITapGestureRecognizer dans interactWihPhotosLayer" )
+//        ImageView.addGestureRecognizer(tap)
+//        imagePicker = UIImagePickerController()
+//        imagePicker?.delegate = self
+//        imagePicker?.allowsEditing = true
+//    }
     
     func interactWithAllPhotosOfLayer(_ tabLayersView :[UIImageView] ) {
         print("nb image dans le calque \(tabLayersView.count)")
