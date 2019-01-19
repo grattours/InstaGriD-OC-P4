@@ -15,19 +15,21 @@
 		FC67A3FE21EB999A00F990F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC67A3FC21EB999A00F990F2 /* Main.storyboard */; };
 		FC67A40021EB999B00F990F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC67A3FF21EB999B00F990F2 /* Assets.xcassets */; };
 		FC67A40321EB999B00F990F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC67A40121EB999B00F990F2 /* LaunchScreen.storyboard */; };
+		FCC5DC2D21F227B0006156B6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FCC5DC2C21F227B0006156B6 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FC56050521ECF6AB00BEBEC5 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		FC5BD39721EBA27A00F5BECD /* Delm-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delm-Medium.otf"; sourceTree = "<group>"; };
 		FC5BD39921EBA28A00F5BECD /* ThirstySoftRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThirstySoftRegular.otf; sourceTree = "<group>"; };
-		FC67A3F521EB999A00F990F2 /* InstaGriD-OC-P4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "InstaGriD-OC-P4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC67A3F521EB999A00F990F2 /* InstaGriD-OC-P5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "InstaGriD-OC-P5.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC67A3F821EB999A00F990F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC67A3FA21EB999A00F990F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FC67A3FD21EB999A00F990F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC67A3FF21EB999B00F990F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC67A40221EB999B00F990F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC67A40421EB999B00F990F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCC5DC2C21F227B0006156B6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +46,8 @@
 		FC67A3EC21EB999A00F990F2 = {
 			isa = PBXGroup;
 			children = (
-				FC67A3F721EB999A00F990F2 /* InstaGriD-OC-P4 */,
+				FCC5DC2C21F227B0006156B6 /* Default-568h@2x.png */,
+				FC67A3F721EB999A00F990F2 /* InstaGriD-OC-P5 */,
 				FC67A3F621EB999A00F990F2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,12 +55,12 @@
 		FC67A3F621EB999A00F990F2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FC67A3F521EB999A00F990F2 /* InstaGriD-OC-P4.app */,
+				FC67A3F521EB999A00F990F2 /* InstaGriD-OC-P5.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FC67A3F721EB999A00F990F2 /* InstaGriD-OC-P4 */ = {
+		FC67A3F721EB999A00F990F2 /* InstaGriD-OC-P5 */ = {
 			isa = PBXGroup;
 			children = (
 				FC67A40C21EB9B6D00F990F2 /* Model */,
@@ -66,7 +69,7 @@
 				FC67A40421EB999B00F990F2 /* Info.plist */,
 				FC67A40D21EB9B7400F990F2 /* Supporting Files */,
 			);
-			path = "InstaGriD-OC-P4";
+			path = "InstaGriD-OC-P5";
 			sourceTree = "<group>";
 		};
 		FC67A40A21EB9B4700F990F2 /* Cotnroller */ = {
@@ -108,9 +111,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FC67A3F421EB999A00F990F2 /* InstaGriD-OC-P4 */ = {
+		FC67A3F421EB999A00F990F2 /* InstaGriD-OC-P5 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FC67A40721EB999B00F990F2 /* Build configuration list for PBXNativeTarget "InstaGriD-OC-P4" */;
+			buildConfigurationList = FC67A40721EB999B00F990F2 /* Build configuration list for PBXNativeTarget "InstaGriD-OC-P5" */;
 			buildPhases = (
 				FC67A3F121EB999A00F990F2 /* Sources */,
 				FC67A3F221EB999A00F990F2 /* Frameworks */,
@@ -120,9 +123,9 @@
 			);
 			dependencies = (
 			);
-			name = "InstaGriD-OC-P4";
+			name = "InstaGriD-OC-P5";
 			productName = "InstaGriD-OC-P4";
-			productReference = FC67A3F521EB999A00F990F2 /* InstaGriD-OC-P4.app */;
+			productReference = FC67A3F521EB999A00F990F2 /* InstaGriD-OC-P5.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -140,7 +143,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FC67A3F021EB999A00F990F2 /* Build configuration list for PBXProject "InstaGriD-OC-P4" */;
+			buildConfigurationList = FC67A3F021EB999A00F990F2 /* Build configuration list for PBXProject "InstaGriD-OC-P5" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -153,7 +156,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FC67A3F421EB999A00F990F2 /* InstaGriD-OC-P4 */,
+				FC67A3F421EB999A00F990F2 /* InstaGriD-OC-P5 */,
 			);
 		};
 /* End PBXProject section */
@@ -168,6 +171,7 @@
 				FC5BD39A21EBA28A00F5BECD /* ThirstySoftRegular.otf in Resources */,
 				FC5BD39821EBA27A00F5BECD /* Delm-Medium.otf in Resources */,
 				FC67A3FE21EB999A00F990F2 /* Main.storyboard in Resources */,
+				FCC5DC2D21F227B0006156B6 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,7 +332,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y7TNCJPS5N;
-				INFOPLIST_FILE = "InstaGriD-OC-P4/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/InstaGriD-OC-P5/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -346,7 +350,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y7TNCJPS5N;
-				INFOPLIST_FILE = "InstaGriD-OC-P4/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/InstaGriD-OC-P5/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -361,7 +365,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FC67A3F021EB999A00F990F2 /* Build configuration list for PBXProject "InstaGriD-OC-P4" */ = {
+		FC67A3F021EB999A00F990F2 /* Build configuration list for PBXProject "InstaGriD-OC-P5" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FC67A40521EB999B00F990F2 /* Debug */,
@@ -370,7 +374,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FC67A40721EB999B00F990F2 /* Build configuration list for PBXNativeTarget "InstaGriD-OC-P4" */ = {
+		FC67A40721EB999B00F990F2 /* Build configuration list for PBXNativeTarget "InstaGriD-OC-P5" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FC67A40821EB999B00F990F2 /* Debug */,

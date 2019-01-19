@@ -109,6 +109,7 @@ extension ViewController {
    }
     
     // après le choix de l'image - remplacement dans l'UIImageView
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         // print("après choix")
         let info = convertFromUIImagePickerControllerInfoKeyDictionary(info)
