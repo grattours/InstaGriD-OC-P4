@@ -128,4 +128,5 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let activity = UIActivityViewController(activityItems: [contentToshare], applicationActivities: nil )
         present(activity,animated: true, completion: nil)
     }
-}
+    
+} // fin classe

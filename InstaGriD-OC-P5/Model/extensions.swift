@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+
 // convertit une vue en image, élégant non ?
 extension UIView {
     var image: UIImage? {
