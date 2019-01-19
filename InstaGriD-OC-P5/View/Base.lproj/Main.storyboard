@@ -46,18 +46,18 @@
                                     <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="WZy-J6-A8k" userLabel="Layers View 1">
                                         <rect key="frame" x="15" y="15" width="265" height="265"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" tag="11" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stone" translatesAutoresizingMaskIntoConstraints="NO" id="1cx-z4-Qyb">
+                                            <imageView userInteractionEnabled="NO" tag="11" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bigCross" translatesAutoresizingMaskIntoConstraints="NO" id="1cx-z4-Qyb">
                                                 <rect key="frame" x="0.0" y="0.0" width="265" height="125"/>
                                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="K81-CR-aTm">
                                                 <rect key="frame" x="0.0" y="140" width="265" height="125"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" tag="12" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="echec" translatesAutoresizingMaskIntoConstraints="NO" id="LP5-ha-s4R">
+                                                    <imageView userInteractionEnabled="NO" tag="12" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cross" translatesAutoresizingMaskIntoConstraints="NO" id="LP5-ha-s4R">
                                                         <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </imageView>
-                                                    <imageView userInteractionEnabled="NO" tag="13" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="balles" translatesAutoresizingMaskIntoConstraints="NO" id="Heh-Z0-AIG">
+                                                    <imageView userInteractionEnabled="NO" tag="13" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cross" translatesAutoresizingMaskIntoConstraints="NO" id="Heh-Z0-AIG">
                                                         <rect key="frame" x="140" y="0.0" width="125" height="125"/>
                                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </imageView>
@@ -79,11 +79,11 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Xix-fU-9c5">
                                                 <rect key="frame" x="0.0" y="0.0" width="265" height="125"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" tag="21" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="echec" translatesAutoresizingMaskIntoConstraints="NO" id="cLJ-wq-0NF" userLabel="Layer2ImageView1">
+                                                    <imageView userInteractionEnabled="NO" tag="21" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cross" translatesAutoresizingMaskIntoConstraints="NO" id="cLJ-wq-0NF" userLabel="Layer2ImageView1">
                                                         <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </imageView>
-                                                    <imageView userInteractionEnabled="NO" tag="22" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="balles" translatesAutoresizingMaskIntoConstraints="NO" id="K8O-Ji-8hR">
+                                                    <imageView userInteractionEnabled="NO" tag="22" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cross" translatesAutoresizingMaskIntoConstraints="NO" id="K8O-Ji-8hR">
                                                         <rect key="frame" x="140" y="0.0" width="125" height="125"/>
                                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </imageView>
@@ -93,7 +93,7 @@
                                                     <constraint firstItem="K8O-Ji-8hR" firstAttribute="height" secondItem="Xix-fU-9c5" secondAttribute="height" id="x3C-6Q-Fho"/>
                                                 </constraints>
                                             </stackView>
-                                            <imageView userInteractionEnabled="NO" tag="23" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stone" translatesAutoresizingMaskIntoConstraints="NO" id="HiK-gI-eko">
+                                            <imageView userInteractionEnabled="NO" tag="23" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bigCross" translatesAutoresizingMaskIntoConstraints="NO" id="HiK-gI-eko">
                                                 <rect key="frame" x="0.0" y="140" width="265" height="125"/>
                                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </imageView>
@@ -102,17 +102,17 @@
                                             <constraint firstItem="HiK-gI-eko" firstAttribute="height" secondItem="Xix-fU-9c5" secondAttribute="height" id="LbE-fA-xeR"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="gu8-Io-BZ2" userLabel="Layers View 3">
+                                    <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="gu8-Io-BZ2" userLabel="Layers View 3">
                                         <rect key="frame" x="15" y="15" width="265" height="265"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="1Xb-id-Kkb" userLabel="Stack View Top">
                                                 <rect key="frame" x="0.0" y="0.0" width="265" height="125"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" tag="31" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="echec" translatesAutoresizingMaskIntoConstraints="NO" id="JeN-5l-gol">
+                                                    <imageView userInteractionEnabled="NO" tag="31" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cross" translatesAutoresizingMaskIntoConstraints="NO" id="JeN-5l-gol">
                                                         <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </imageView>
-                                                    <imageView userInteractionEnabled="NO" tag="32" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="velo" translatesAutoresizingMaskIntoConstraints="NO" id="Akh-RH-Qoo">
+                                                    <imageView userInteractionEnabled="NO" tag="32" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cross" translatesAutoresizingMaskIntoConstraints="NO" id="Akh-RH-Qoo">
                                                         <rect key="frame" x="140" y="0.0" width="125" height="125"/>
                                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </imageView>
@@ -125,11 +125,11 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="8rH-XZ-AhL" userLabel="Stack View Bot">
                                                 <rect key="frame" x="0.0" y="140" width="265" height="125"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" tag="33" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stone" translatesAutoresizingMaskIntoConstraints="NO" id="8Yh-fj-UiT">
+                                                    <imageView userInteractionEnabled="NO" tag="33" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cross" translatesAutoresizingMaskIntoConstraints="NO" id="8Yh-fj-UiT">
                                                         <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </imageView>
-                                                    <imageView userInteractionEnabled="NO" tag="34" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="balles" translatesAutoresizingMaskIntoConstraints="NO" id="awB-V9-b50">
+                                                    <imageView userInteractionEnabled="NO" tag="34" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cross" translatesAutoresizingMaskIntoConstraints="NO" id="awB-V9-b50">
                                                         <rect key="frame" x="140" y="0.0" width="125" height="125"/>
                                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </imageView>
@@ -252,7 +252,8 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="vms-pr-5Le" appends="YES" id="NOF-FV-b7d"/>
+                                    <outletCollection property="gestureRecognizers" destination="lOl-y9-XJo" appends="YES" id="4Bp-ye-gsS"/>
+                                    <outletCollection property="gestureRecognizers" destination="M6T-Vd-Y4M" appends="YES" id="PzM-vs-zKu"/>
                                 </connections>
                             </stackView>
                         </subviews>
@@ -346,9 +347,6 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="layer2ImageView1" destination="cLJ-wq-0NF" id="IkC-Gy-NDU"/>
-                        <outlet property="layer2ImageView2" destination="HiK-gI-eko" id="6AA-d5-oGe"/>
-                        <outlet property="layer2ImageView3" destination="awB-V9-b50" id="qcO-33-Trn"/>
                         <outlet property="ui_Button1" destination="rYJ-37-QgJ" id="CvD-CZ-xDn"/>
                         <outlet property="ui_Button2" destination="Pvm-PA-kfV" id="CjV-Uw-gzV"/>
                         <outlet property="ui_Button3" destination="4Js-XV-UCt" id="1YB-Wd-3Qc"/>
@@ -357,6 +355,7 @@
                         <outlet property="ui_LayersView1" destination="WZy-J6-A8k" id="lul-GH-to8"/>
                         <outlet property="ui_LayersView2" destination="u2k-QM-EOB" id="u7P-kc-zDg"/>
                         <outlet property="ui_LayersView3" destination="gu8-Io-BZ2" id="Adj-wY-0ad"/>
+                        <outlet property="ui_StackSwip" destination="mCt-CH-CMS" id="Zu2-T2-xv8"/>
                         <outletCollection property="tabLayersView1" destination="1cx-z4-Qyb" collectionClass="NSMutableArray" id="YfO-HV-35K"/>
                         <outletCollection property="tabLayersView1" destination="LP5-ha-s4R" collectionClass="NSMutableArray" id="AEv-Jw-Mla"/>
                         <outletCollection property="tabLayersView1" destination="Heh-Z0-AIG" collectionClass="NSMutableArray" id="qfN-8I-ytj"/>
@@ -370,18 +369,17 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="vms-pr-5Le"/>
+                <swipeGestureRecognizer direction="right" id="lOl-y9-XJo"/>
+                <swipeGestureRecognizer direction="right" id="M6T-Vd-Y4M"/>
             </objects>
             <point key="canvasLocation" x="50.724637681159422" y="24.456521739130437"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Cross" width="48" height="48"/>
         <image name="Layout 1" width="80" height="80"/>
         <image name="Layout 2" width="80" height="80"/>
         <image name="Layout 3" width="80" height="80"/>
-        <image name="balles" width="4032" height="3024"/>
-        <image name="echec" width="4032" height="3024"/>
-        <image name="stone" width="4032" height="3024"/>
-        <image name="velo" width="4032" height="3024"/>
+        <image name="bigCross" width="48" height="49"/>
     </resources>
 </document>

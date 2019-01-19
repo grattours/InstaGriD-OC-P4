@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC1655D221F36D4500A03B4A /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1655D121F36D4500A03B4A /* extensions.swift */; };
 		FC56050621ECF6AB00BEBEC5 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC56050521ECF6AB00BEBEC5 /* PhotosViewController.swift */; };
 		FC5BD39821EBA27A00F5BECD /* Delm-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC5BD39721EBA27A00F5BECD /* Delm-Medium.otf */; };
 		FC5BD39A21EBA28A00F5BECD /* ThirstySoftRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC5BD39921EBA28A00F5BECD /* ThirstySoftRegular.otf */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC1655D121F36D4500A03B4A /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		FC56050521ECF6AB00BEBEC5 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		FC5BD39721EBA27A00F5BECD /* Delm-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delm-Medium.otf"; sourceTree = "<group>"; };
 		FC5BD39921EBA28A00F5BECD /* ThirstySoftRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThirstySoftRegular.otf; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 		FC67A40C21EB9B6D00F990F2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FC1655D121F36D4500A03B4A /* extensions.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				FC56050621ECF6AB00BEBEC5 /* PhotosViewController.swift in Sources */,
 				FC67A3FB21EB999A00F990F2 /* ViewController.swift in Sources */,
 				FC67A3F921EB999A00F990F2 /* AppDelegate.swift in Sources */,
+				FC1655D221F36D4500A03B4A /* extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
