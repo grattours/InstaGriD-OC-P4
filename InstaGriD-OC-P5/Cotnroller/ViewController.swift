@@ -17,16 +17,19 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet weak var ui_Button1: UIButton!
     @IBOutlet weak var ui_Button2: UIButton!
     @IBOutlet weak var ui_Button3: UIButton!
+    @IBOutlet weak var ui_Button4: UIButton!
     
     // calques de photos
     @IBOutlet weak var ui_LayersView1: UIStackView!
     @IBOutlet weak var ui_LayersView2: UIStackView!
     @IBOutlet weak var ui_LayersView3: UIStackView!
+    @IBOutlet weak var ui_LayersView4: UIStackView!
     
     // tableaux de photos par calques
     @IBOutlet var tabLayersView1: [UIImageView]!
     @IBOutlet var tabLayersView2: [UIImageView]!
     @IBOutlet var tabLayersView3: [UIImageView]!
+    @IBOutlet var tabLayersView4: [UIImageView]!
     
     var imagePicker:  UIImagePickerController?
     var alternateImage: UIImage? //image à placer
@@ -67,38 +70,52 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         // on affiche que ce que la dispo permet
         switch disposition {
         case 1:
+            useTransition(ui_LayersView1, .transitionFlipFromTop)
             ui_LayersView1.isHidden = false
             ui_Button1.imageView?.isHidden = false
             ui_Button1.setImage(UIImage(named: "Selected"), for: .normal)
             interactWithAllPhotosOfLayer(tabLayersView1)
             currentLayerView = ui_LayersView1
         case 2:
+            useTransition(ui_LayersView2, .transitionCurlUp)
             ui_LayersView2.isHidden = false
             ui_Button2.imageView?.isHidden = false
             ui_Button2.setImage(UIImage(named: "Selected"), for: .normal)
             interactWithAllPhotosOfLayer(tabLayersView2)
             currentLayerView = ui_LayersView2
         case 3:
+            useTransition(ui_LayersView3, .transitionCrossDissolve)
             ui_LayersView3.isHidden = false
             ui_Button3.imageView?.isHidden = false
             ui_Button3.setImage(UIImage(named: "Selected"), for: .normal)
             interactWithAllPhotosOfLayer(tabLayersView3)
             currentLayerView = ui_LayersView3
+        case 4:
+            useTransition(ui_LayersView4, .transitionCurlDown)
+            ui_LayersView4.isHidden = false
+            ui_Button4.imageView?.isHidden = false
+            ui_Button4.setImage(UIImage(named: "Selected"), for: .normal)
+            interactWithAllPhotosOfLayer(tabLayersView4)
+            currentLayerView = ui_LayersView4
         default:
             print("impossible")
         }
+        
     }
 // cache toutes les coches "Selected" et les calques
     func hiddeAll() {
         ui_LayersView1.isHidden = true
         ui_LayersView2.isHidden = true
         ui_LayersView3.isHidden = true
+        ui_LayersView4.isHidden = true
         ui_Button1.setImage(UIImage(named: ""), for: .normal)
         ui_Button2.setImage(UIImage(named: ""), for: .normal)
         ui_Button3.setImage(UIImage(named: ""), for: .normal)
+        ui_Button4.setImage(UIImage(named: ""), for: .normal)
         ui_Button1.imageView?.isHidden = true
         ui_Button2.imageView?.isHidden = true
         ui_Button3.imageView?.isHidden = true
+        ui_Button4.imageView?.isHidden = true
     }
     
     // extrait du ViewDidload - autorise geste up et left
@@ -127,6 +144,21 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let contentToshare: UIImage = imageView.image!
         let activity = UIActivityViewController(activityItems: [contentToshare], applicationActivities: nil )
         present(activity,animated: true, completion: nil)
+    }
+    
+    // 1  .transitionFlipFromTop
+    // 2  .transitionCurlUp
+    // 3  .transitionCurlDown
+    // 4  .transitionFlipFromLeft
+    // 5  .transitionCrossDissolve
+    // 6  .transitionFlipFromRight
+    // 7  .transitionFlipFromTop
+    fileprivate func useTransition(_ layer: UIStackView, _ transition: UIView.AnimationOptions) {
+        UIView.transition(from: layer,
+                          to: layer,
+                          duration: 0.5,
+                          options: [transition, .showHideTransitionViews],
+                          completion: nil)
     }
     
 } // fin classe

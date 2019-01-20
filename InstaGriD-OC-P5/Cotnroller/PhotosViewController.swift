@@ -27,13 +27,20 @@ extension ViewController {
     @objc func searchPhotoToReplace(tap: UITapGestureRecognizer) {
         tagOfTap = tap.view?.tag ?? 0
         guard imagePicker != nil else { return }
-        let alert = UIAlertController(title: "Choisir une photo", message: "dans la photothéque", preferredStyle: .actionSheet)
+        let alert = UIAlertController(title: "Choisir une photo", message: "dans la photothéque ou prendre une photo", preferredStyle: .actionSheet)
+        let camera = UIAlertAction(title: "Appareil photo", style: .default) { (act) in
+            if UIImagePickerController.isSourceTypeAvailable(.camera) {
+                self.imagePicker?.sourceType = .camera
+                self.present(self.imagePicker!, animated: true, completion: nil)
+            }
+        }
         let library = UIAlertAction(title: "photothéque", style: .default) { (act) in self.imagePicker?.sourceType = .photoLibrary
             self.present(self.imagePicker!, animated: true, completion: nil)
         }
         let exit = UIAlertAction(title: "Annuler", style: .cancel, handler: nil)
         
         alert.addAction(library)
+        alert.addAction(camera)
         alert.addAction(exit)
         self.present(alert, animated: true, completion: nil)
         
@@ -50,11 +57,14 @@ extension ViewController {
 //            tag: 31 image: tabLayersView3[0]
 //            tag: 32 image: tabLayersView3[1]
 //            tag: 33 image: tabLayersView3[2]
-//            tag: 34 image: tabLayersView3[3]
+//            tag: 41 image: tabLayersView4[0]
+//            tag: 44 image: tabLayersView4[1]
+//            tag: 44 image: tabLayersView4[2]
         
         switch tag {
         case 11:
             tabLayersView1[0].image = alternateImage
+            tabLayersView1[0].contentMode = .scaleToFill
             alternateImage = nil
         case 12:
             tabLayersView1[1].image = alternateImage
@@ -70,6 +80,7 @@ extension ViewController {
             alternateImage = nil
         case 23:
             tabLayersView2[2].image = alternateImage
+            tabLayersView2[2].contentMode = .scaleToFill
             alternateImage = nil
         case 31:
             tabLayersView3[0].image = alternateImage
@@ -82,6 +93,16 @@ extension ViewController {
             alternateImage = nil
         case 34:
             tabLayersView3[3].image = alternateImage
+            alternateImage = nil
+        case 41:
+            tabLayersView4[0].image = alternateImage
+            tabLayersView4[0].contentMode = .scaleToFill
+            alternateImage = nil
+        case 42:
+            tabLayersView4[1].image = alternateImage
+            alternateImage = nil
+        case 43:
+            tabLayersView4[2].image = alternateImage
             alternateImage = nil
         default:
             print("autre")
