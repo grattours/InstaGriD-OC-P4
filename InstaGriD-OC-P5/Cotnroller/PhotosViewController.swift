@@ -10,7 +10,7 @@ import UIKit
 
 extension ViewController {
     
-    // interagir avec les photos du calque lancé
+    // interact with the layer's launched photos
     func interactWithAllPhotosOfLayer(_ tabLayersView :[UIImageView] ) {
         let nb = tabLayersView.count
         for i in 0 ..< nb {
@@ -23,7 +23,7 @@ extension ViewController {
             }
         }
    
-    // recherche photo avec le tap... selector  dans le viewDidload
+    // photo search with the tap ... selector in the viewDidload
     @objc func searchPhotoToReplace(tap: UITapGestureRecognizer) {
         tagOfTap = tap.view?.tag ?? 0
         guard imagePicker != nil else { return }
@@ -45,8 +45,8 @@ extension ViewController {
         self.present(alert, animated: true, completion: nil)
         
     }
-// le tag de l'image permet de retrouver l'image et le calque
-// tag 32 => calque 3 image 2
+// the tag of the image allows to find the image and the layer
+// tag 32 => layer 3 image 2
     func ImageOfTheTag(_ tag:Int){
 //            tag: 11 image: tabLayersView1[0]
 //            tag: 12 image: tabLayersView1[1]
@@ -68,15 +68,19 @@ extension ViewController {
             alternateImage = nil
         case 12:
             tabLayersView1[1].image = alternateImage
+            tabLayersView1[1].contentMode = .scaleToFill
             alternateImage = nil
         case 13:
             tabLayersView1[2].image = alternateImage
+            tabLayersView1[2].contentMode = .scaleToFill
             alternateImage = nil
         case 21:
             tabLayersView2[0].image = alternateImage
+            tabLayersView2[0].contentMode = .scaleToFill
             alternateImage = nil
         case 22:
             tabLayersView2[1].image = alternateImage
+            tabLayersView2[1].contentMode = .scaleToFill
             alternateImage = nil
         case 23:
             tabLayersView2[2].image = alternateImage
@@ -84,15 +88,19 @@ extension ViewController {
             alternateImage = nil
         case 31:
             tabLayersView3[0].image = alternateImage
+            tabLayersView3[0].contentMode = .scaleToFill
             alternateImage = nil
         case 32:
             tabLayersView3[1].image = alternateImage
+            tabLayersView3[1].contentMode = .scaleToFill
             alternateImage = nil
         case 33:
             tabLayersView3[2].image = alternateImage
+            tabLayersView3[2].contentMode = .scaleToFill
             alternateImage = nil
         case 34:
             tabLayersView3[3].image = alternateImage
+            tabLayersView3[3].contentMode = .scaleToFill
             alternateImage = nil
         case 41:
             tabLayersView4[0].image = alternateImage
@@ -100,16 +108,18 @@ extension ViewController {
             alternateImage = nil
         case 42:
             tabLayersView4[1].image = alternateImage
+            tabLayersView4[1].contentMode = .scaleToFill
             alternateImage = nil
         case 43:
             tabLayersView4[2].image = alternateImage
+            tabLayersView4[2].contentMode = .scaleToFill
             alternateImage = nil
         default:
             print("autre")
         }
    }
     
-    // après le choix de l'image - remplacement dans l'UIImageView
+    // after the choice of the image - replacement in the UIImageView
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let info = convertFromUIImagePickerControllerInfoKeyDictionary(info)
         var photo: UIImage?
@@ -136,4 +146,4 @@ fileprivate func convertFromUIImagePickerControllerInfoKey(_ input: UIImagePicke
     return input.rawValue
 }
 
-// fin extension de ViewController
+// end extension of ViewController

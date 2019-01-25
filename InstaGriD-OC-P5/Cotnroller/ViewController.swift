@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    // label et chevron dans un Stack
+    // label and chevron in a stack
     @IBOutlet weak var ui_Chevron: UILabel!
     @IBOutlet weak var ui_LabeSwipToShare: UILabel!
     @IBOutlet weak var ui_StackSwip: UIStackView!
@@ -19,39 +19,39 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet weak var ui_Button3: UIButton!
     @IBOutlet weak var ui_Button4: UIButton!
     
-    // calques de photos
+    // layers of photos
     @IBOutlet weak var ui_LayersView1: UIStackView!
     @IBOutlet weak var ui_LayersView2: UIStackView!
     @IBOutlet weak var ui_LayersView3: UIStackView!
     @IBOutlet weak var ui_LayersView4: UIStackView!
     
-    // tableaux de photos par calques
+    // photo tables by layers
     @IBOutlet var tabLayersView1: [UIImageView]!
     @IBOutlet var tabLayersView2: [UIImageView]!
     @IBOutlet var tabLayersView3: [UIImageView]!
     @IBOutlet var tabLayersView4: [UIImageView]!
     
     var imagePicker:  UIImagePickerController?
-    var alternateImage: UIImage? //image à placer
-    var tagOfTap: Int = 0  // tag du bouton tapé
-    var currentLayerView:  UIStackView! // pour le partage
+    var alternateImage: UIImage? //image to place
+    var tagOfTap: Int = 0  // button tag typed
+    var currentLayerView:  UIStackView! // for sharing
     
     @IBAction func buttonSelected(_ sender: UIButton) {
         hiddeAll()
-        // on refait apparaître le calque et la coche du bouton choisi
+        // the layer and the tick of the chosen button are redone
         hideShowForDisposition(sender.tag)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         ui_Button2.setImage(UIImage(named: "Selected"), for: .normal)
-        // on peut partager avant de cliquer un bouton
+        // we can share before clicking a button
         currentLayerView = ui_LayersView2
-        // interagir avec les images des calques
+        // interact with layer images
         interactWithAllPhotosOfLayer(tabLayersView2)
         swipToShare()
     }
-    // on inverse le chevron et on change le label paysage/portrait
+    // we reverse the chevron and change the label landscape / portrait
     override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
         coordinator.animate(alongsideTransition: { context in
             if UIApplication.shared.statusBarOrientation.isLandscape {
@@ -64,10 +64,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         })
     }
     
-    // chaque diposition cache ou pas son contenu au clic bouton
+    // each layout shows its content at the click of a button
     func hideShowForDisposition(_ disposition: Int){
-        hiddeAll() // on réinitialise en cachant tout
-        // on affiche que ce que la dispo permet
+        hiddeAll() // we reset by hiding everything
+        // we show that what the dispo allows
         switch disposition {
         case 1:
             useTransition(ui_LayersView1, .transitionFlipFromTop)
@@ -102,7 +102,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
         
     }
-// cache toutes les coches "Selected" et les calques
+// hides all selected checkmarks and layers
     func hiddeAll() {
         ui_LayersView1.isHidden = true
         ui_LayersView2.isHidden = true
@@ -118,9 +118,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         ui_Button4.imageView?.isHidden = true
     }
     
-    // extrait du ViewDidload - autorise geste up et left
+    // extract from ViewDidload - allows gesture up and left
     fileprivate func swipToShare() {
-        // gérer le swip - left pour paysage up pour portrait
+        // manage the swip - left for landscape up for portrait
         let left = UISwipeGestureRecognizer(target : self, action : #selector(ViewController.leftSwipe))
         left.direction = .left
         self.ui_StackSwip.addGestureRecognizer(left)
@@ -129,7 +129,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         self.ui_StackSwip.addGestureRecognizer(up)
     }
     
-    // action sur le geste en fonction du sens
+    // action on the gesture according to the meaning
     @objc
     func leftSwipe(){
         let imageView = UIImageView(image: currentLayerView.image)
@@ -161,4 +161,4 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                           completion: nil)
     }
     
-} // fin classe
+} // end class
