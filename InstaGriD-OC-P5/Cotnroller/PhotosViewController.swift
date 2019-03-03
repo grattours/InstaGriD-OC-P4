@@ -1,6 +1,6 @@
 //
 //  PhotosViewController.swift
-//  InstaGriD-OC-P4
+//  InstaGriD-OC-P5
 //
 //  Created by Luc Derosne on 14/01/2019.
 //  Copyright © 2019 Luc Derosne. All rights reserved.
@@ -64,55 +64,67 @@ extension ViewController {
         switch tag {
         case 11:
             tabLayersView1[0].image = alternateImage
-            tabLayersView1[0].contentMode = .scaleToFill
+            tabLayersView1[0].contentMode = .scaleAspectFill
+            tabLayersView1[0].clipsToBounds = true
             alternateImage = nil
         case 12:
             tabLayersView1[1].image = alternateImage
-            tabLayersView1[1].contentMode = .scaleToFill
+            tabLayersView1[1].contentMode = .scaleAspectFill
+            tabLayersView1[1].clipsToBounds = true
             alternateImage = nil
         case 13:
             tabLayersView1[2].image = alternateImage
-            tabLayersView1[2].contentMode = .scaleToFill
+            tabLayersView1[2].contentMode = .scaleAspectFill
+            tabLayersView1[2].clipsToBounds = true
             alternateImage = nil
         case 21:
             tabLayersView2[0].image = alternateImage
-            tabLayersView2[0].contentMode = .scaleToFill
+            tabLayersView2[0].contentMode = .scaleAspectFill
+            tabLayersView2[0].clipsToBounds = true
             alternateImage = nil
         case 22:
             tabLayersView2[1].image = alternateImage
-            tabLayersView2[1].contentMode = .scaleToFill
+            tabLayersView2[1].contentMode = .scaleAspectFill
             alternateImage = nil
         case 23:
             tabLayersView2[2].image = alternateImage
-            tabLayersView2[2].contentMode = .scaleToFill
+            tabLayersView2[2].contentMode = .scaleAspectFill
+            tabLayersView2[2].clipsToBounds = true
             alternateImage = nil
         case 31:
             tabLayersView3[0].image = alternateImage
-            tabLayersView3[0].contentMode = .scaleToFill
+            tabLayersView3[0].contentMode = .scaleAspectFill
+            tabLayersView3[0].clipsToBounds = true
             alternateImage = nil
         case 32:
             tabLayersView3[1].image = alternateImage
-            tabLayersView3[1].contentMode = .scaleToFill
+            tabLayersView3[1].contentMode = .scaleAspectFill
+            tabLayersView3[1].clipsToBounds = true
             alternateImage = nil
         case 33:
             tabLayersView3[2].image = alternateImage
-            tabLayersView3[2].contentMode = .scaleToFill
+            tabLayersView3[2].contentMode = .scaleAspectFill
+            tabLayersView3[2].clipsToBounds = true
             alternateImage = nil
         case 34:
             tabLayersView3[3].image = alternateImage
-            tabLayersView3[3].contentMode = .scaleToFill
+            tabLayersView3[3].contentMode = .scaleAspectFill
+            tabLayersView3[3].clipsToBounds = true
             alternateImage = nil
         case 41:
             tabLayersView4[0].image = alternateImage
-            tabLayersView4[0].contentMode = .scaleToFill
+            tabLayersView4[0].contentMode = .scaleAspectFill
+            tabLayersView4[0].clipsToBounds = true
             alternateImage = nil
         case 42:
             tabLayersView4[1].image = alternateImage
-            tabLayersView4[1].contentMode = .scaleToFill
+            tabLayersView4[1].contentMode = .scaleAspectFill
+            tabLayersView4[1].clipsToBounds = true
             alternateImage = nil
         case 43:
             tabLayersView4[2].image = alternateImage
-            tabLayersView4[2].contentMode = .scaleToFill
+            tabLayersView4[2].contentMode = .scaleAspectFill
+            tabLayersView4[2].clipsToBounds = true
             alternateImage = nil
         default:
             print("autre")
