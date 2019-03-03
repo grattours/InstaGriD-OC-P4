@@ -85,6 +85,7 @@ extension ViewController {
         case 22:
             tabLayersView2[1].image = alternateImage
             tabLayersView2[1].contentMode = .scaleAspectFill
+             tabLayersView2[1].clipsToBounds = true
             alternateImage = nil
         case 23:
             tabLayersView2[2].image = alternateImage

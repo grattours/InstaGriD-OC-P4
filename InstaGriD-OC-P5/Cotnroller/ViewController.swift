@@ -37,7 +37,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     var currentLayerView:  UIStackView! // for sharing
     
     @IBAction func buttonSelected(_ sender: UIButton) {
-        hiddeAll()
+        // hiddeAll()
         // the layer and the tick of the chosen button are redone
         hideShowForDisposition(sender.tag)
     }
